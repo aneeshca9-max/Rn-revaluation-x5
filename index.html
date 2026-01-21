@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RN ENERGY</title>
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  margin:0;
+  font-family:system-ui;
+  background:#0a0a0a;
+  color:#fff;
+}
+
+/* ===== BRAND HEADER ===== */
+.brand-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  padding:16px;
+  background:linear-gradient(135deg,#08140d,#000);
+  border-bottom:1px solid #0f3;
+}
+
+.brand-logo{
+  width:56px;
+  height:56px;
+  border-radius:14px;
+  filter:brightness(1.4) contrast(1.2);
+  box-shadow:
+    0 0 12px rgba(76,255,176,0.8),
+    0 0 26px rgba(76,255,176,0.6);
+}
+
+.brand-text{
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+.brand-text .rn{
+  color:#4CFFB0;
+  text-shadow:0 0 14px rgba(76,255,176,.9);
+}
+.brand-text .energy{
+  color:#fff;
+  opacity:.9;
+}
+
+/* ===== CONTENT ===== */
+.container{padding:14px;}
+
+.card{
+  background:#1a1a1a;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.8);
+}
+
+.switch{
+  padding:14px 34px;
+  border-radius:40px;
+  border:none;
+  font-size:18px;
+  font-weight:bold;
+  background:#ff3b3b;
+  color:#fff;
+}
+.switch.on{
+  background:#00ff66;
+  color:#000;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="brand-header">
+  <img src="logo.png" class="brand-logo">
+  <div class="brand-text">
+    <span class="rn">RN</span> <span class="energy">ENERGY</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="container">
+  <div class="card">
+    <h3><i class="fa-solid fa-water"></i> Water Level App Active</h3>
+    <p>Status: <b style="color:#00ff66;">ONLINE</b></p>
+    <button class="switch on">SYSTEM OK</button>
+  </div>
+</div>
+
+</body>
+</html>
